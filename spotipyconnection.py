@@ -2,7 +2,7 @@ import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 
 scope = "user-read-recently-played"
-sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id="b808a468fde844f1997ed084717952dc", client_secret="49883ce67d9748bc9fdad8ed1f402a96", redirect_uri="http://example.com", scope=scope))
+sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id="", client_secret="", redirect_uri="", scope=scope))
 
 
 results = sp.current_user_recently_played(limit=21)
